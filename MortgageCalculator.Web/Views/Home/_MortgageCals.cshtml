@@ -1,0 +1,62 @@
+﻿<div class="jumbotron">
+    <h3>Mortgage Calculator</h3>
+</div>
+
+<div ng-controller="MortgageCalsController">
+    <form class="form-horizontal" name="mortgageForm" ng-submit="CalsMortgage()">
+        <fieldset>
+            <div class="form-group">
+                <label class="col-md-3">Loan Principal Amount</label>
+                <div class="col-md-4">
+                    <input type="number" min="1" max="50000000" class="form-control" name="PrincipalAmount" id="PrincipalAmount" ng-model="PrincipalAmount" required />
+                    <span class="help-inline fontRed" ng-show="submitted && mortgageForm.PrincipalAmount.$error.required">Loan Principal Amount is required.</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3">Loan Term in Years</label>
+                <div class="col-md-4">
+                    <input type="number" min="1" max="50"  class="form-control" name="LoanTerm" ng-model="LoanTerm" required />
+                    <span class="help-inline fontRed" ng-show="submitted && mortgageForm.LoanTerm.$error.required">Loan Term in Years is required.</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-3">Mortgage Type</label>
+                <div class="col-md-4">
+                    <select name="Rate_id" class="form-control" data-ng-options="type.Value as type.Text for type in Mortgagetype" data-ng-model="Rate" required>
+                        <option value="">Select Mortgage Type</option>
+                    </select>
+                    <span ng-show="submitted && mortgageForm.Rate_id.$error.required">Mortgage Type is required.</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-3">
+
+                </div>
+                <div class="col-md-4">
+                    <input type="submit" value="Calculate" class="btn btn-primary" ng-click="submitted=true" />
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    <fieldset>
+        <div class="row">
+            <div class="form-group" ng-if="totalRepayment >= 0">
+                <label class="col-md-3">Total Repayment </label>
+                <div class="col-md-4">
+                    =   {{ totalRepayment }}
+                    @*<input type="text" class="form-control" name="LoanTerm" ng-model="LoanTerm" required />*@
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group" ng-if="totalInterest >= 0">
+                <label class="col-md-3">Total Interest </label>
+                <div class="col-md-4">
+                    =   {{ totalInterest }}
+                    @*<input type="text" class="form-control" name="LoanTerm" ng-model="LoanTerm" required />*@
+                </div>
+            </div>
+        </div>
+    </fieldset>
+
+

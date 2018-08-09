@@ -1,0 +1,34 @@
+﻿<div class="jumbotron">
+    <h3>Mortgage Home</h3>
+</div>
+<br />
+<div ng-controller="MortgageCalsHomeController">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>MortgageType</th>
+                <th>InterestRate</th>
+                <th>InterestRepayment</th>
+                <th>EffectiveStartDate</th>
+                <th>EffectiveEndDate</th>
+                <th>TermsInMonths</th>
+                <th>CancellationFee</th>
+                <th>EstablishmentFee</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="Mortgage in allMortgages | orderBy : ['MortgageType','InterestRate']">
+                <td>{{Mortgage.Name}}</td>
+                <td>{{Mortgage.MortgageType}}</td>
+                <td>{{Mortgage.InterestRate}}</td>
+                <td>{{Mortgage.InterestRepayment}}</td>
+                <td>{{Mortgage.EffectiveStartDate | jsonDate : 'dd/MM/yyyy'}}</td>
+                <td>{{Mortgage.EffectiveEndDate | jsonDate : 'dd/MM/yyyy'}}</td>
+                <td>{{Mortgage.TermsInMonths}}</td>
+                <td>{{Mortgage.CancellationFee}}</td>
+                <td>{{Mortgage.EstablishmentFee}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

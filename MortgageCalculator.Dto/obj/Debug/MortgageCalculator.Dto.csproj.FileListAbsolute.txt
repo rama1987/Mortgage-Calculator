@@ -1,0 +1,24 @@
+D:\Projects\MortgageCalculator\MortgageCalculator.Dto\bin\Debug\MortgageCalculator.Dto.dll
+D:\Projects\MortgageCalculator\MortgageCalculator.Dto\bin\Debug\MortgageCalculator.Dto.pdb
+D:\Projects\MortgageCalculator\MortgageCalculator.Dto\obj\Debug\MortgageCalculator.Dto.csproj.CoreCompileInputs.cache
+D:\Projects\MortgageCalculator\MortgageCalculator.Dto\obj\Debug\MortgageCalculator.Dto.dll
+D:\Projects\MortgageCalculator\MortgageCalculator.Dto\obj\Debug\MortgageCalculator.Dto.pdb
+D:\DataAshMoollan\Recruitment\ASP Coding Test\MortgageCalculator\MortgageCalculator.Dto\bin\Debug\MortgageCalculator.Dto.dll
+D:\DataAshMoollan\Recruitment\ASP Coding Test\MortgageCalculator\MortgageCalculator.Dto\bin\Debug\MortgageCalculator.Dto.pdb
+D:\DataAshMoollan\Recruitment\ASP Coding Test\MortgageCalculator\MortgageCalculator.Dto\obj\Debug\MortgageCalculator.Dto.csproj.CoreCompileInputs.cache
+D:\DataAshMoollan\Recruitment\ASP Coding Test\MortgageCalculator\MortgageCalculator.Dto\obj\Debug\MortgageCalculator.Dto.dll
+D:\DataAshMoollan\Recruitment\ASP Coding Test\MortgageCalculator\MortgageCalculator.Dto\obj\Debug\MortgageCalculator.Dto.pdb
+C:\Users\muthuraja.v\CBA\MortgageCalculator\MortgageCalculator\MortgageCalculator.Dto\bin\Debug\MortgageCalculator.Dto.dll
+C:\Users\muthuraja.v\CBA\MortgageCalculator\MortgageCalculator\MortgageCalculator.Dto\bin\Debug\MortgageCalculator.Dto.pdb
+C:\Users\muthuraja.v\CBA\MortgageCalculator\MortgageCalculator\MortgageCalculator.Dto\obj\Debug\MortgageCalculator.Dto.dll
+C:\Users\muthuraja.v\CBA\MortgageCalculator\MortgageCalculator\MortgageCalculator.Dto\obj\Debug\MortgageCalculator.Dto.pdb
+C:\Users\muthuraja.v\CBA\MortgageCalculator\MortgageCalculator\MortgageCalculator.Dto\obj\Debug\MortgageCalculator.Dto.csprojResolveAssemblyReference.cache
+C:\Users\muthuraja.v\CBA\MortgageCalculator\MortgageCalculator\MortgageCalculator.Dto\bin\Debug\Newtonsoft.Json.dll
+C:\Users\muthuraja.v\CBA\MortgageCalculator\MortgageCalculator\MortgageCalculator.Dto\bin\Debug\Newtonsoft.Json.xml
+D:\CBA  coding test\Muthu\MortgageCalculator\MortgageCalculator\MortgageCalculator.Dto\bin\Debug\MortgageCalculator.Dto.dll
+D:\CBA  coding test\Muthu\MortgageCalculator\MortgageCalculator\MortgageCalculator.Dto\bin\Debug\MortgageCalculator.Dto.pdb
+D:\CBA  coding test\Muthu\MortgageCalculator\MortgageCalculator\MortgageCalculator.Dto\bin\Debug\Newtonsoft.Json.dll
+D:\CBA  coding test\Muthu\MortgageCalculator\MortgageCalculator\MortgageCalculator.Dto\bin\Debug\Newtonsoft.Json.xml
+D:\CBA  coding test\Muthu\MortgageCalculator\MortgageCalculator\MortgageCalculator.Dto\obj\Debug\MortgageCalculator.Dto.csprojResolveAssemblyReference.cache
+D:\CBA  coding test\Muthu\MortgageCalculator\MortgageCalculator\MortgageCalculator.Dto\obj\Debug\MortgageCalculator.Dto.dll
+D:\CBA  coding test\Muthu\MortgageCalculator\MortgageCalculator\MortgageCalculator.Dto\obj\Debug\MortgageCalculator.Dto.pdb

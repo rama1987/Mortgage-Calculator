@@ -1,0 +1,79 @@
+﻿
+<div class="jumbotron">
+    <h3>Mortgage Calculator</h3>
+</div>
+
+@model MortgageCalculator.Web.Models.MortgageModel
+@{
+    ViewBag.Title = "Mortgage Calculation";
+    string lcltotalinterst = "";
+    string lclTotalRepaymnt = "";
+
+    if (ViewBag.TotalInterest != null)
+    {
+        lcltotalinterst = Convert.ToString(ViewBag.TotalInterest) == "" ? "0" : Convert.ToString(ViewBag.TotalInterest);
+    }
+    if (ViewBag.TotalRepayment != null)
+    {
+        lclTotalRepaymnt = Convert.ToString(ViewBag.TotalRepayment) == "" ? "0" : Convert.ToString(ViewBag.TotalRepayment);
+    }
+}
+
+@section scripts{
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/MortgageHome.js"></script>
+}
+
+@using (Html.BeginForm("MortgageCals", "Home", FormMethod.Post, new { @class = "form-horizontal", role = "form-submit" }))
+{
+    <div>
+        <div>
+            @Html.AntiForgeryToken()
+            <br /><br />
+            <h3><b>Mortgage Payment</b></h3>
+            <div class="form-group">
+                @Html.LabelFor(m => m.PrincipalAmount, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.PrincipalAmount, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.PrincipalAmount, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.LoanTerm, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.LoanTerm, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.LoanTerm, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div ng-app="myApp" ng-controller="MortgageController" class="form-group">
+                @Html.LabelFor(m => m.MortgageType, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.DropDownListFor(m => m.Rate, ViewBag.Mortgagetype as SelectList)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Calculate" class="btn btn-default" />
+                </div>
+            </div>
+
+            <div>
+                @if (!(string.IsNullOrEmpty(lclTotalRepaymnt)))
+                {
+                    <h4><b>Total Repayment = @lclTotalRepaymnt</b></h4>
+                }
+                @if (!(string.IsNullOrEmpty(lcltotalinterst)))
+                {
+                    <h4><b>Total Interest = @lcltotalinterst</b></h4>
+                }
+            </div>
+        </div>
+    </div>
+
+}
+
+
+
